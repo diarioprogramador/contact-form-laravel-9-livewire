@@ -59,7 +59,7 @@
                                     @if ($success)
                                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                                             {{ $success }}
-                                            <button type="button" class="close" data-dismiss="alert"
+                                            <button wire:click="$set('success', null)" type="button" class="close" data-dismiss="alert"
                                                 aria-label="Cerrar">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
